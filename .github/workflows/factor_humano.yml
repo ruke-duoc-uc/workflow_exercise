@@ -1,7 +1,7 @@
 name: Pipeline con Errores
 on:
  push:
-  branches: main
+  branches: no_albedo
 
 jobs:
   build:
@@ -12,4 +12,4 @@ jobs:
       - name: Saludo
         run: echo "Hola Clase"
       - name: Validar Secret
-        run: echo "El token es ${{ secrets.TOKEN}}" 
+        run: echo "El token es ${{ secrets.TOKEN}}"
